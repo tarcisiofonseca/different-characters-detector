@@ -4,15 +4,33 @@ list1 = []
 list2 = []
 list3 = []
 s = 0
+delspaces = 0
+delcomma = 0
+deldot = 0
 
 a = "Insert your string here, but keeping quotation marks"
 b = "Insert your another string here, keeping quotation marks too"
 
 a = a.split(" ")
 a = " ".join(a)
-
 b = b.split(" ")
 b = " ".join(b)
+
+if delspaces == 1:
+    a = a.replace(' ','')
+    b = b.replace(' ','')
+else:
+    pass
+if delcomma == 1:
+    a = a.replace(',','')
+    b = b.replace(',','')
+else:
+    pass
+if deldot == 1:
+    a = a.replace('.','')
+    b = b.replace('.','')
+else:
+    pass
 
 if a == b:
     print("All characters are the same.")
@@ -31,4 +49,3 @@ if len(a) > len(b):
     print("\nThe first string have more characters than the second string. The text left over is:", a[len(b):])
 if len(b) > len(a):
     print("\nThe second string have more characters than the first string. The text left over is:", b[len(a):])
-    
