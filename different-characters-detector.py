@@ -4,9 +4,9 @@ list1 = []
 list2 = []
 list3 = []
 s = 0
-delspaces = 0
-delcomma = 0
-deldot = 0
+ignore_spaces = 0
+ignore_commas = 0
+ignore_dots = 0
 
 a = "Insert your string here, but keeping quotation marks"
 b = "Insert your another string here, keeping quotation marks too"
@@ -16,17 +16,17 @@ a = " ".join(a)
 b = b.split(" ")
 b = " ".join(b)
 
-if delspaces == 1:
+if ignore_spaces == 1:
     a = a.replace(' ','')
     b = b.replace(' ','')
 else:
     pass
-if delcomma == 1:
+if ignore_commas == 1:
     a = a.replace(',','')
     b = b.replace(',','')
 else:
     pass
-if deldot == 1:
+if ignore_dots == 1:
     a = a.replace('.','')
     b = b.replace('.','')
 else:
