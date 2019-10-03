@@ -1,15 +1,20 @@
-character1 = []
-character2 = []
-list1 = []
-list2 = []
-list3 = []
-s = 0
+#If you want to ignore spaces, commas or dots, change their respective fields from 0 to 1
+
 ignore_spaces = 0
 ignore_commas = 0
 ignore_dots = 0
 
 a = "Insert your string here, but keeping quotation marks"
 b = "Insert your another string here, keeping quotation marks too"
+
+# Don't change anything in the code from now on
+
+character1 = []
+character2 = []
+list1 = []
+list2 = []
+list3 = []
+s = 0
 
 a = a.split(" ")
 a = " ".join(a)
